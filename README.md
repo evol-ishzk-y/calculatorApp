@@ -11,7 +11,7 @@
 
 ## 💻 プロジェクト概要
 
-Visual Studio 2022を用いて電卓アプリの制作
+Visual Studio 2022を用いて電卓アプリの制作　
 参考サイト：https://kintame.site/c-calculator/
 
 ---
