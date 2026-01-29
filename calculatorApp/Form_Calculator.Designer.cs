@@ -1,6 +1,6 @@
 ﻿namespace calculatorApp
 {
-    partial class Form1
+    partial class Form_Calculator
     {
         /// <summary>
         ///  Required designer variable.
@@ -250,6 +250,7 @@
             Num_Label.Size = new Size(111, 133);
             Num_Label.TabIndex = 19;
             Num_Label.Text = "0";
+            Num_Label.Click += Num_Label_Click;
             // 
             // mark
             // 
