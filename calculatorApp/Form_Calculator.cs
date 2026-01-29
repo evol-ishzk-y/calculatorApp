@@ -56,5 +56,17 @@ namespace calculatorApp
                 Num_Label.Text += two.Text;
             }
         }
+
+        private void three_Click(object sender, EventArgs e)
+        {
+            if (Label_overwrite == true)
+            {
+                Num_Label.Text = three.Text;
+            }
+            else
+            {
+                Num_Label.Text += three.Text;
+            }
+        }
     }
 }

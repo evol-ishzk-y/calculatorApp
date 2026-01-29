@@ -142,6 +142,7 @@
             three.TabIndex = 8;
             three.Text = "3";
             three.UseVisualStyleBackColor = true;
+            three.Click += three_Click;
             // 
             // zero
             // 
