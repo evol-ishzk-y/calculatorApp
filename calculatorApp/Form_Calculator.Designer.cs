@@ -131,6 +131,7 @@
             two.TabIndex = 7;
             two.Text = "2";
             two.UseVisualStyleBackColor = true;
+            two.Click += two_Click;
             // 
             // three
             // 
