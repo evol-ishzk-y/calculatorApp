@@ -150,6 +150,7 @@
             zero.TabIndex = 9;
             zero.Text = "0";
             zero.UseVisualStyleBackColor = true;
+            zero.Click += zero_Click;
             // 
             // dot
             // 
@@ -262,7 +263,7 @@
             mark.TabIndex = 20;
             mark.Text = "=";
             // 
-            // Form1
+            // Form_Calculator
             // 
             AutoScaleDimensions = new SizeF(20F, 48F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -288,7 +289,7 @@
             Controls.Add(nine);
             Controls.Add(eight);
             Controls.Add(seven);
-            Name = "Form1";
+            Name = "Form_Calculator";
             Text = "Form1";
             Load += Form1_Load;
             ResumeLayout(false);

@@ -1,7 +1,10 @@
+using System.Diagnostics.Eventing.Reader;
+
 namespace calculatorApp
 {
     public partial class Form_Calculator : Form
     {
+        private bool Label_overwrite = true;
         public Form_Calculator()
         {
             InitializeComponent();
@@ -16,5 +19,19 @@ namespace calculatorApp
         {
 
         }
+
+        //0Å`9ÇÉNÉäÉbÉNÇµÇƒNum_LabelÇ…ì¸ÇÍÇÈ
+        private void zero_Click(object sender, EventArgs e)
+        {
+            if(Label_overwrite == true)
+            {
+                Num_Label.Text = zero.Text;
+            }
+            else
+            {
+                Num_Label.Text += zero.Text;
+            }
+        }
+
     }
 }
