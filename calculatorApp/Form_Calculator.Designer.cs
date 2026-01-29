@@ -120,6 +120,7 @@
             one.TabIndex = 6;
             one.Text = "1";
             one.UseVisualStyleBackColor = true;
+            one.Click += one_Click;
             // 
             // two
             // 
