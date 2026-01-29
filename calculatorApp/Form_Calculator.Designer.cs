@@ -120,6 +120,7 @@
             one.TabIndex = 6;
             one.Text = "1";
             one.UseVisualStyleBackColor = true;
+            one.Click += one_Click;
             // 
             // two
             // 
@@ -130,6 +131,7 @@
             two.TabIndex = 7;
             two.Text = "2";
             two.UseVisualStyleBackColor = true;
+            two.Click += two_Click;
             // 
             // three
             // 
@@ -140,6 +142,7 @@
             three.TabIndex = 8;
             three.Text = "3";
             three.UseVisualStyleBackColor = true;
+            three.Click += three_Click;
             // 
             // zero
             // 
