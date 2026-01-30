@@ -60,6 +60,7 @@
             seven.TabIndex = 0;
             seven.Text = "7";
             seven.UseVisualStyleBackColor = true;
+            seven.Click += seven_Click;
             // 
             // eight
             // 
@@ -70,6 +71,7 @@
             eight.TabIndex = 1;
             eight.Text = "8";
             eight.UseVisualStyleBackColor = true;
+            eight.Click += eight_Click;
             // 
             // nine
             // 
@@ -80,6 +82,7 @@
             nine.TabIndex = 2;
             nine.Text = "9";
             nine.UseVisualStyleBackColor = true;
+            nine.Click += nine_Click;
             // 
             // four
             // 
@@ -90,6 +93,7 @@
             four.TabIndex = 3;
             four.Text = "4";
             four.UseVisualStyleBackColor = true;
+            four.Click += four_Click;
             // 
             // five
             // 
@@ -100,6 +104,7 @@
             five.TabIndex = 4;
             five.Text = "5";
             five.UseVisualStyleBackColor = true;
+            five.Click += five_Click;
             // 
             // six
             // 
@@ -110,6 +115,7 @@
             six.TabIndex = 5;
             six.Text = "6";
             six.UseVisualStyleBackColor = true;
+            six.Click += six_Click;
             // 
             // one
             // 
@@ -120,6 +126,7 @@
             one.TabIndex = 6;
             one.Text = "1";
             one.UseVisualStyleBackColor = true;
+            one.Click += one_Click;
             // 
             // two
             // 
@@ -130,6 +137,7 @@
             two.TabIndex = 7;
             two.Text = "2";
             two.UseVisualStyleBackColor = true;
+            two.Click += two_Click;
             // 
             // three
             // 
@@ -140,6 +148,7 @@
             three.TabIndex = 8;
             three.Text = "3";
             three.UseVisualStyleBackColor = true;
+            three.Click += three_Click;
             // 
             // zero
             // 

@@ -24,7 +24,7 @@ namespace calculatorApp
         //0`9‚ğƒNƒŠƒbƒN‚µ‚ÄNum_Label‚É“ü‚ê‚é
         private void zero_Click(object sender, EventArgs e)
         {
-            if(Label_overwrite == true)
+            if (Label_overwrite == true)
             {
                 Num_Label.Text = zero.Text;
             }
