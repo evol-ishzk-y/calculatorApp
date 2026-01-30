@@ -162,7 +162,18 @@ namespace calculatorApp
             {
                 Num_Label.Text += dot.Text;
             }
- 
+
+        }
+
+        private void all_clear_Click(object sender, EventArgs e)
+        {
+            Num_Label.Text = "0";
+
+            Label_overwrite = true;
+
+            Dot_Label = false;
+
+            //”š‚Ì“ü‚Á‚½•Ï”‚ğíœ‚·‚éiŒã‚Å“ü‚ê‚éj
         }
     }
 }

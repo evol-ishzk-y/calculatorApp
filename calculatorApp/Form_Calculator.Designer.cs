@@ -181,6 +181,7 @@
             all_clear.TabIndex = 11;
             all_clear.Text = "A/C";
             all_clear.UseVisualStyleBackColor = true;
+            all_clear.Click += all_clear_Click;
             // 
             // sign
             // 
