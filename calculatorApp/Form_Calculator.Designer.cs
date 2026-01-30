@@ -212,6 +212,7 @@
             divided.TabIndex = 18;
             divided.Text = "÷";
             divided.UseVisualStyleBackColor = true;
+            divided.Click += divided_Click;
             // 
             // equal
             // 
@@ -244,6 +245,7 @@
             minus.TabIndex = 15;
             minus.Text = "-";
             minus.UseVisualStyleBackColor = true;
+            minus.Click += minus_Click;
             // 
             // multiplied
             // 
@@ -254,6 +256,7 @@
             multiplied.TabIndex = 14;
             multiplied.Text = "×";
             multiplied.UseVisualStyleBackColor = true;
+            multiplied.Click += multiplied_Click;
             // 
             // Num_Label
             // 

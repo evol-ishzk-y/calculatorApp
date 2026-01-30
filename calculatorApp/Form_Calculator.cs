@@ -229,5 +229,26 @@ namespace calculatorApp
             mType = MarksType.NON;
             Label_overwrite = true;
         }
+
+        private void minus_Click(object sender, EventArgs e)
+        {
+            Calculate();
+            mType = MarksType.MINUS;
+            Label_overwrite = true;
+        }
+
+        private void multiplied_Click(object sender, EventArgs e)
+        {
+            Calculate();
+            mType = MarksType.MULTIPLIED;
+            Label_overwrite = true;
+        }
+
+        private void divided_Click(object sender, EventArgs e)
+        {
+            Calculate();
+            mType = MarksType.DEVIDED;
+            Label_overwrite = true;
+        }
     }
 }
