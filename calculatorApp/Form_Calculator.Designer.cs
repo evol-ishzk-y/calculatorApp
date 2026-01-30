@@ -181,6 +181,7 @@
             all_clear.TabIndex = 11;
             all_clear.Text = "A/C";
             all_clear.UseVisualStyleBackColor = true;
+            all_clear.Click += all_clear_Click;
             // 
             // sign
             // 
@@ -254,7 +255,7 @@
             // 
             // Num_Label
             // 
-            Num_Label.AutoSize = true;
+            Num_Label.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             Num_Label.Font = new Font("Yu Gothic UI", 25F);
             Num_Label.Location = new Point(789, 86);
             Num_Label.Name = "Num_Label";
