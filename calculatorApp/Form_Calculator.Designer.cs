@@ -222,6 +222,7 @@
             equal.TabIndex = 17;
             equal.Text = "=";
             equal.UseVisualStyleBackColor = true;
+            equal.Click += equal_Click;
             // 
             // plus
             // 
@@ -232,6 +233,7 @@
             plus.TabIndex = 16;
             plus.Text = "+";
             plus.UseVisualStyleBackColor = true;
+            plus.Click += plus_Click;
             // 
             // minus
             // 
@@ -275,6 +277,7 @@
             mark.Size = new Size(125, 133);
             mark.TabIndex = 20;
             mark.Text = "=";
+            mark.Click += mark_Click;
             // 
             // Form_Calculator
             // 
