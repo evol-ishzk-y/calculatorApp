@@ -161,6 +161,7 @@
             dot.TabIndex = 10;
             dot.Text = ".";
             dot.UseVisualStyleBackColor = true;
+            dot.Click += dot_Click;
             // 
             // all_clear
             // 
