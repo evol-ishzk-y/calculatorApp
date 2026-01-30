@@ -254,6 +254,7 @@
             // 
             // Num_Label
             // 
+            Num_Label.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             Num_Label.AutoSize = true;
             Num_Label.Font = new Font("Yu Gothic UI", 25F);
             Num_Label.Location = new Point(789, 86);
@@ -261,6 +262,7 @@
             Num_Label.Size = new Size(111, 133);
             Num_Label.TabIndex = 19;
             Num_Label.Text = "0";
+            Num_Label.TextAlign = ContentAlignment.TopRight;
             Num_Label.Click += Num_Label_Click;
             // 
             // mark

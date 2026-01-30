@@ -27,6 +27,7 @@ namespace calculatorApp
             if (Label_overwrite == true)
             {
                 Num_Label.Text = zero.Text;
+                Label_overwrite = false;
             }
             else
             {
@@ -39,6 +40,7 @@ namespace calculatorApp
             if (Label_overwrite == true)
             {
                 Num_Label.Text = one.Text;
+                Label_overwrite = false;
             }
             else
             {
@@ -51,6 +53,7 @@ namespace calculatorApp
             if (Label_overwrite == true)
             {
                 Num_Label.Text = two.Text;
+                Label_overwrite = false;
             }
             else
             {
@@ -63,6 +66,7 @@ namespace calculatorApp
             if (Label_overwrite == true)
             {
                 Num_Label.Text = three.Text;
+                Label_overwrite = false;
             }
             else
             {
@@ -75,6 +79,7 @@ namespace calculatorApp
             if (Label_overwrite == true)
             {
                 Num_Label.Text = four.Text;
+                Label_overwrite = false;
             }
             else
             {
@@ -87,6 +92,7 @@ namespace calculatorApp
             if (Label_overwrite == true)
             {
                 Num_Label.Text = five.Text;
+                Label_overwrite = false;
             }
             else
             {
@@ -99,6 +105,7 @@ namespace calculatorApp
             if (Label_overwrite == true)
             {
                 Num_Label.Text = six.Text;
+                Label_overwrite = false;
             }
             else
             {
@@ -111,6 +118,7 @@ namespace calculatorApp
             if (Label_overwrite == true)
             {
                 Num_Label.Text = seven.Text;
+                Label_overwrite = false;
             }
             else
             {
@@ -123,6 +131,7 @@ namespace calculatorApp
             if (Label_overwrite == true)
             {
                 Num_Label.Text = eight.Text;
+                Label_overwrite = false;
             }
             else
             {
@@ -135,6 +144,7 @@ namespace calculatorApp
             if (Label_overwrite == true)
             {
                 Num_Label.Text = nine.Text;
+                Label_overwrite = false;
             }
             else
             {
