@@ -68,5 +68,77 @@ namespace calculatorApp
                 Num_Label.Text += three.Text;
             }
         }
+
+        private void four_Click(object sender, EventArgs e)
+        {
+            if (Label_overwrite == true)
+            {
+                Num_Label.Text = four.Text;
+            }
+            else
+            {
+                Num_Label.Text += four.Text;
+            }
+        }
+
+        private void five_Click(object sender, EventArgs e)
+        {
+            if (Label_overwrite == true)
+            {
+                Num_Label.Text = five.Text;
+            }
+            else
+            {
+                Num_Label.Text += five.Text;
+            }
+        }
+
+        private void six_Click(object sender, EventArgs e)
+        {
+            if (Label_overwrite == true)
+            {
+                Num_Label.Text = six.Text;
+            }
+            else
+            {
+                Num_Label.Text += six.Text;
+            }
+        }
+
+        private void seven_Click(object sender, EventArgs e)
+        {
+            if (Label_overwrite == true)
+            {
+                Num_Label.Text = seven.Text;
+            }
+            else
+            {
+                Num_Label.Text += seven.Text;
+            }
+        }
+
+        private void eight_Click(object sender, EventArgs e)
+        {
+            if (Label_overwrite == true)
+            {
+                Num_Label.Text = eight.Text;
+            }
+            else
+            {
+                Num_Label.Text += eight.Text;
+            }
+        }
+
+        private void nine_Click(object sender, EventArgs e)
+        {
+            if (Label_overwrite == true)
+            {
+                Num_Label.Text = nine.Text;
+            }
+            else
+            {
+                Num_Label.Text += nine.Text;
+            }
+        }
     }
 }
