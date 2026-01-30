@@ -6,6 +6,41 @@ namespace calculatorApp
     {
         private bool Label_overwrite = true;
         private bool Dot_Label = false;
+        private double dNum_Pool = 0;
+        private enum MarksType
+        {
+            NON,        // Ç»Çµ
+            PLUS,       // Å{
+            MINUS,      // Å|
+            MULTIPLIED, // Å~
+            DEVIDED     // ÅÄ
+        }
+        private MarksType mType = MarksType.NON;
+
+        private void Calculate()
+        {
+            double dNum = double.Parse(Num_Label.Text);
+            switch (mType)
+            {
+                case MarksType.NON:
+                    dNum_Pool = dNum;
+                    break;
+                case MarksType.PLUS:
+                    dNum_Pool += dNum;
+                    break;
+                case MarksType.MINUS:
+                    dNum_Pool -= dNum;
+                    break;
+                case MarksType.MULTIPLIED:
+                    dNum_Pool *= dNum;
+                    break;
+                case MarksType.DEVIDED:
+                    dNum_Pool /= dNum;
+                    break;
+            }
+            Num_Label.Text = dNum_Pool.ToString();
+        }
+
         public Form_Calculator()
         {
             InitializeComponent();
@@ -174,6 +209,25 @@ namespace calculatorApp
             Dot_Label = false;
 
             //êîéöÇÃì¸Ç¡ÇΩïœêîÇçÌèúÇ∑ÇÈÅiå„Ç≈ì¸ÇÍÇÈÅj
+        }
+
+        private void plus_Click(object sender, EventArgs e)
+        {
+            Calculate();
+            mType = MarksType.PLUS;
+            Label_overwrite = true;
+        }
+
+        private void mark_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void equal_Click(object sender, EventArgs e)
+        {
+            Calculate();
+            mType = MarksType.NON;
+            Label_overwrite = true;
         }
     }
 }
