@@ -202,6 +202,7 @@
             persent.TabIndex = 13;
             persent.Text = "%";
             persent.UseVisualStyleBackColor = true;
+            persent.Click += persent_Click;
             // 
             // divided
             // 
