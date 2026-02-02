@@ -14,13 +14,14 @@ namespace calculatorApp
             MINUS,      // |
             MULTIPLIED, // ~
             DEVIDED,     // €
-            PERCENT
+            PERSENT
         }
         private MarksType mType = MarksType.NON;
 
         private void Calculate()
         {
             double dNum = double.Parse(Num_Label.Text);
+            if (!double.TryParse(Num_Label.Text, out dNum)) return;
             switch (mType)
             {
                 case MarksType.NON:
@@ -38,7 +39,7 @@ namespace calculatorApp
                 case MarksType.DEVIDED:
                     dNum_Pool /= dNum;
                     break;
-                case MarksType.PERCENT:
+                case MarksType.PERSENT:
                     dNum_Pool = dNum * 0.01;
                     break;
             }
@@ -207,12 +208,12 @@ namespace calculatorApp
         private void all_clear_Click(object sender, EventArgs e)
         {
             Num_Label.Text = "0";
-
             Label_overwrite = true;
-
             Dot_Label = false;
 
-            //”š‚Ì“ü‚Á‚½•Ï”‚ğíœ‚·‚éiŒã‚Å“ü‚ê‚éj
+            //”š‚Ì“ü‚Á‚½•Ï”‚ğíœ‚·‚é
+            dNum_Pool = 0;
+            mType = MarksType.NON;
         }
 
         private void plus_Click(object sender, EventArgs e)
@@ -258,8 +259,20 @@ namespace calculatorApp
         private void persent_Click(object sender, EventArgs e)
         {
             Calculate();
-            mType = MarksType.PERCENT;
+            mType = MarksType.PERSENT;
             Label_overwrite = true;
+        }
+
+        private void sign_Click(object sender, EventArgs e)
+        {
+            if(Num_Label.Text.Contains("-"))
+            {
+                Num_Label.Text = Num_Label.Text.Replace("-", "");
+            }
+            else
+            {
+                Num_Label.Text = "-" + Num_Label.Text;
+            }
         }
     }
 }
