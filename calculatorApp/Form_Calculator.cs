@@ -13,7 +13,8 @@ namespace calculatorApp
             PLUS,       // Å{
             MINUS,      // Å|
             MULTIPLIED, // Å~
-            DEVIDED     // ÅÄ
+            DEVIDED,     // ÅÄ
+            PERCENT
         }
         private MarksType mType = MarksType.NON;
 
@@ -36,6 +37,9 @@ namespace calculatorApp
                     break;
                 case MarksType.DEVIDED:
                     dNum_Pool /= dNum;
+                    break;
+                case MarksType.PERCENT:
+                    dNum_Pool = dNum * 0.01;
                     break;
             }
             Num_Label.Text = dNum_Pool.ToString();
@@ -248,6 +252,13 @@ namespace calculatorApp
         {
             Calculate();
             mType = MarksType.DEVIDED;
+            Label_overwrite = true;
+        }
+
+        private void persent_Click(object sender, EventArgs e)
+        {
+            Calculate();
+            mType = MarksType.PERCENT;
             Label_overwrite = true;
         }
     }
