@@ -62,135 +62,23 @@ namespace calculatorApp
         }
 
         //0Å`9ÇÉNÉäÉbÉNÇµÇƒNum_LabelÇ…ì¸ÇÍÇÈ
-        private void zero_Click(object sender, EventArgs e)
+        private void numButton_Click(object sender, EventArgs e)
         {
-            if (Label_overwrite == true)
-            {
-                Num_Label.Text = zero.Text;
-                Label_overwrite = false;
-            }
-            else
-            {
-                Num_Label.Text += zero.Text;
-            }
-        }
+            Button ClickedButton = (Button)sender;
 
-        private void one_Click(object sender, EventArgs e)
-        {
-            if (Label_overwrite == true)
-            {
-                Num_Label.Text = one.Text;
-                Label_overwrite = false;
-            }
-            else
-            {
-                Num_Label.Text += one.Text;
-            }
-        }
+            string buttonText = ClickedButton.Text;
 
-        private void two_Click(object sender, EventArgs e)
-        {
             if (Label_overwrite == true)
             {
-                Num_Label.Text = two.Text;
+                Num_Label.Text = buttonText;
                 Label_overwrite = false;
             }
             else
             {
-                Num_Label.Text += two.Text;
+                Num_Label.Text += buttonText;
             }
         }
-
-        private void three_Click(object sender, EventArgs e)
-        {
-            if (Label_overwrite == true)
-            {
-                Num_Label.Text = three.Text;
-                Label_overwrite = false;
-            }
-            else
-            {
-                Num_Label.Text += three.Text;
-            }
-        }
-
-        private void four_Click(object sender, EventArgs e)
-        {
-            if (Label_overwrite == true)
-            {
-                Num_Label.Text = four.Text;
-                Label_overwrite = false;
-            }
-            else
-            {
-                Num_Label.Text += four.Text;
-            }
-        }
-
-        private void five_Click(object sender, EventArgs e)
-        {
-            if (Label_overwrite == true)
-            {
-                Num_Label.Text = five.Text;
-                Label_overwrite = false;
-            }
-            else
-            {
-                Num_Label.Text += five.Text;
-            }
-        }
-
-        private void six_Click(object sender, EventArgs e)
-        {
-            if (Label_overwrite == true)
-            {
-                Num_Label.Text = six.Text;
-                Label_overwrite = false;
-            }
-            else
-            {
-                Num_Label.Text += six.Text;
-            }
-        }
-
-        private void seven_Click(object sender, EventArgs e)
-        {
-            if (Label_overwrite == true)
-            {
-                Num_Label.Text = seven.Text;
-                Label_overwrite = false;
-            }
-            else
-            {
-                Num_Label.Text += seven.Text;
-            }
-        }
-
-        private void eight_Click(object sender, EventArgs e)
-        {
-            if (Label_overwrite == true)
-            {
-                Num_Label.Text = eight.Text;
-                Label_overwrite = false;
-            }
-            else
-            {
-                Num_Label.Text += eight.Text;
-            }
-        }
-
-        private void nine_Click(object sender, EventArgs e)
-        {
-            if (Label_overwrite == true)
-            {
-                Num_Label.Text = nine.Text;
-                Label_overwrite = false;
-            }
-            else
-            {
-                Num_Label.Text += nine.Text;
-            }
-        }
+       
 
         private void dot_Click(object sender, EventArgs e)
         {
