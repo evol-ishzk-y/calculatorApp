@@ -37,6 +37,12 @@ namespace calculatorApp
                     dNum_Pool *= dNum;
                     break;
                 case MarksType.DEVIDED:
+                    if(dNum == 0)
+                    {
+                        MessageBox.Show("0Ç≈äÑÇÈÇ±Ç∆ÇÕèoóàÇ‹ÇπÇÒ");
+                        all_clear_Click(null, null);
+                        return;
+                    }
                     dNum_Pool /= dNum;
                     break;
                 case MarksType.PERSENT:
