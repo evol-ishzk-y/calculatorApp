@@ -48,7 +48,7 @@
             minus = new Button();
             multiplied = new Button();
             Num_Label = new Label();
-            mark = new Label();
+            Mark_Label = new Label();
             SuspendLayout();
             // 
             // seven
@@ -272,23 +272,22 @@
             Num_Label.TextAlign = ContentAlignment.MiddleRight;
             Num_Label.Click += Num_Label_Click;
             // 
-            // mark
+            // Mark_Label
             // 
-            mark.AutoSize = true;
-            mark.Font = new Font("Yu Gothic UI", 25F);
-            mark.Location = new Point(78, 86);
-            mark.Name = "mark";
-            mark.Size = new Size(125, 133);
-            mark.TabIndex = 20;
-            mark.Text = "=";
-            mark.Click += mark_Click;
+            Mark_Label.AutoSize = true;
+            Mark_Label.Font = new Font("Yu Gothic UI", 25F);
+            Mark_Label.Location = new Point(78, 86);
+            Mark_Label.Name = "Mark_Label";
+            Mark_Label.Size = new Size(125, 133);
+            Mark_Label.TabIndex = 20;
+            Mark_Label.Text = "=";
             // 
             // Form_Calculator
             // 
             AutoScaleDimensions = new SizeF(20F, 48F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(969, 1309);
-            Controls.Add(mark);
+            Controls.Add(Mark_Label);
             Controls.Add(Num_Label);
             Controls.Add(divided);
             Controls.Add(equal);
@@ -338,6 +337,6 @@
         private Button minus;
         private Button multiplied;
         private Label Num_Label;
-        private Label mark;
+        private Label Mark_Label;
     }
 }

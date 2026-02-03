@@ -37,7 +37,7 @@ namespace calculatorApp
                     dNum_Pool *= dNum;
                     break;
                 case MarksType.DEVIDED:
-                    if(dNum == 0)
+                    if (dNum == 0)
                     {
                         MessageBox.Show("0Ç≈äÑÇÈÇ±Ç∆ÇÕèoóàÇ‹ÇπÇÒ");
                         all_clear_Click(null, null);
@@ -87,9 +87,13 @@ namespace calculatorApp
 
         private void optionButton_Click(object sender, EventArgs e)
         {
-            Calculate();
+            if (Label_overwrite == false)
+            {
+                Calculate();
+            }
             Button ClickedButton = (Button)sender;
             string option = ClickedButton.Text;
+            Mark_Label.Text = option;
 
             switch (option)
             {
@@ -135,13 +139,8 @@ namespace calculatorApp
 
             //êîéöÇÃì¸Ç¡ÇΩïœêîÇçÌèúÇ∑ÇÈ
             dNum_Pool = 0;
+            Mark_Label.Text = "=";
             mType = MarksType.NON;
-        }
-
-       
-        private void mark_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void equal_Click(object sender, EventArgs e)
@@ -149,11 +148,12 @@ namespace calculatorApp
             Calculate();
             mType = MarksType.NON;
             Label_overwrite = true;
+            Mark_Label.Text = "=";
         }
 
         private void sign_Click(object sender, EventArgs e)
         {
-            if(Num_Label.Text.Contains("-"))
+            if (Num_Label.Text.Contains("-"))
             {
                 Num_Label.Text = Num_Label.Text.Replace("-", "");
             }
