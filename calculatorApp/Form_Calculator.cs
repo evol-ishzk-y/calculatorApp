@@ -1,3 +1,4 @@
+using System;
 using System.Diagnostics.Eventing.Reader;
 
 namespace calculatorApp
@@ -20,8 +21,7 @@ namespace calculatorApp
 
         private void Calculate()
         {
-            double dNum = double.Parse(Num_Label.Text);
-            if (!double.TryParse(Num_Label.Text, out dNum)) return;
+            if (!double.TryParse(Num_Label.Text, out double dNum)) return;
             switch (mType)
             {
                 case MarksType.NON:
@@ -78,7 +78,35 @@ namespace calculatorApp
                 Num_Label.Text += buttonText;
             }
         }
-       
+
+        private void optionButton_Click(object sender, EventArgs e)
+        {
+            Calculate();
+            Button ClickedButton = (Button)sender;
+            string option = ClickedButton.Text;
+
+            switch (option)
+            {
+                case "+":
+                    mType = MarksType.PLUS;
+                    break;
+                case "-":
+                    mType = MarksType.MINUS;
+                    break;
+                case "Å~":
+                    mType = MarksType.MULTIPLIED;
+                    break;
+                case "ÅÄ":
+                    mType = MarksType.DEVIDED;
+                    break;
+                case "%":
+                    mType = MarksType.PERSENT;
+                    break;
+            }
+            Label_overwrite = true;
+        }
+
+
 
         private void dot_Click(object sender, EventArgs e)
         {
@@ -104,13 +132,7 @@ namespace calculatorApp
             mType = MarksType.NON;
         }
 
-        private void plus_Click(object sender, EventArgs e)
-        {
-            Calculate();
-            mType = MarksType.PLUS;
-            Label_overwrite = true;
-        }
-
+       
         private void mark_Click(object sender, EventArgs e)
         {
 
@@ -120,34 +142,6 @@ namespace calculatorApp
         {
             Calculate();
             mType = MarksType.NON;
-            Label_overwrite = true;
-        }
-
-        private void minus_Click(object sender, EventArgs e)
-        {
-            Calculate();
-            mType = MarksType.MINUS;
-            Label_overwrite = true;
-        }
-
-        private void multiplied_Click(object sender, EventArgs e)
-        {
-            Calculate();
-            mType = MarksType.MULTIPLIED;
-            Label_overwrite = true;
-        }
-
-        private void divided_Click(object sender, EventArgs e)
-        {
-            Calculate();
-            mType = MarksType.DEVIDED;
-            Label_overwrite = true;
-        }
-
-        private void persent_Click(object sender, EventArgs e)
-        {
-            Calculate();
-            mType = MarksType.PERSENT;
             Label_overwrite = true;
         }
 

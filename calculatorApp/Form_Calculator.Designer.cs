@@ -203,7 +203,7 @@
             persent.TabIndex = 13;
             persent.Text = "%";
             persent.UseVisualStyleBackColor = true;
-            persent.Click += persent_Click;
+            persent.Click += optionButton_Click;
             // 
             // divided
             // 
@@ -214,7 +214,7 @@
             divided.TabIndex = 18;
             divided.Text = "÷";
             divided.UseVisualStyleBackColor = true;
-            divided.Click += divided_Click;
+            divided.Click += optionButton_Click;
             // 
             // equal
             // 
@@ -236,7 +236,7 @@
             plus.TabIndex = 16;
             plus.Text = "+";
             plus.UseVisualStyleBackColor = true;
-            plus.Click += plus_Click;
+            plus.Click += optionButton_Click;
             // 
             // minus
             // 
@@ -247,7 +247,7 @@
             minus.TabIndex = 15;
             minus.Text = "-";
             minus.UseVisualStyleBackColor = true;
-            minus.Click += minus_Click;
+            minus.Click += optionButton_Click;
             // 
             // multiplied
             // 
@@ -258,7 +258,7 @@
             multiplied.TabIndex = 14;
             multiplied.Text = "×";
             multiplied.UseVisualStyleBackColor = true;
-            multiplied.Click += multiplied_Click;
+            multiplied.Click += optionButton_Click;
             // 
             // Num_Label
             // 
