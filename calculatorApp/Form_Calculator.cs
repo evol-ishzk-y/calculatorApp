@@ -164,5 +164,14 @@ namespace calculatorApp
                 Num_Label.Text = "-" + Num_Label.Text;
             }
         }
+
+        private void Form_Calculator_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                equal_Click(null, null);
+            }
+
+        }
     }
 }
