@@ -111,6 +111,8 @@ namespace calculatorApp
                     break;
                 case "%":
                     mType = MarksType.PERSENT;
+                    Calculate();
+                    mType = MarksType.NON;
                     break;
             }
             Label_overwrite = true;
@@ -139,7 +141,7 @@ namespace calculatorApp
 
             //”š‚Ì“ü‚Á‚½•Ï”‚ğíœ‚·‚é
             dNum_Pool = 0;
-            Mark_Label.Text = "=";
+            Mark_Label.Text = "";
             mType = MarksType.NON;
         }
 
