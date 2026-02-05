@@ -76,11 +76,15 @@ namespace calculatorApp
 
             if (Label_overwrite == true)
             {
+                if (buttonText == "0") return;
+
                 Num_Label.Text = buttonText;
                 Label_overwrite = false;
             }
             else
             {
+                if (buttonText == "0" && Num_Label.Text == "0") return;
+
                 Num_Label.Text += buttonText;
             }
         }
@@ -122,6 +126,13 @@ namespace calculatorApp
 
         private void dot_Click(object sender, EventArgs e)
         {
+            if(Label_overwrite == true)
+            {
+                Num_Label.Text = "0.";
+                Label_overwrite = false;
+                return;
+            }
+
             if (Num_Label.Text.Contains(dot.Text))
             {
                 return;
