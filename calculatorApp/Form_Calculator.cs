@@ -126,7 +126,7 @@ namespace calculatorApp
 
         private void dot_Click(object sender, EventArgs e)
         {
-            if(Label_overwrite == true)
+            if (Label_overwrite == true)
             {
                 Num_Label.Text = "0.";
                 Label_overwrite = false;
@@ -178,11 +178,32 @@ namespace calculatorApp
 
         private void Form_Calculator_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter)
             {
                 equal_Click(null, null);
             }
 
+        }
+
+        private void backSpace_Click(object sender, EventArgs e)
+        {
+            int length = Num_Label.Text.Length;
+
+            if (length > 1)
+            {
+                Num_Label.Text = Num_Label.Text.Substring(0, length - 1);
+
+                if (Num_Label.Text == "-")
+                {
+                    Num_Label.Text = "0";
+                    Label_overwrite = true;
+                }
+            }
+            else
+            {
+                Num_Label.Text = "0";
+                Label_overwrite = true;
+            }
         }
     }
 }

@@ -49,6 +49,7 @@
             multiplied = new Button();
             Num_Label = new Label();
             Mark_Label = new Label();
+            backSpace = new Button();
             SuspendLayout();
             // 
             // seven
@@ -153,9 +154,9 @@
             // zero
             // 
             zero.Font = new Font("Yu Gothic UI", 15F);
-            zero.Location = new Point(63, 1082);
+            zero.Location = new Point(275, 1072);
             zero.Name = "zero";
-            zero.Size = new Size(400, 174);
+            zero.Size = new Size(188, 174);
             zero.TabIndex = 9;
             zero.Text = "0";
             zero.UseVisualStyleBackColor = true;
@@ -164,7 +165,7 @@
             // dot
             // 
             dot.Font = new Font("Yu Gothic UI", 15F);
-            dot.Location = new Point(491, 1082);
+            dot.Location = new Point(63, 1072);
             dot.Name = "dot";
             dot.Size = new Size(188, 174);
             dot.TabIndex = 10;
@@ -219,7 +220,7 @@
             // equal
             // 
             equal.Font = new Font("Yu Gothic UI", 15F);
-            equal.Location = new Point(712, 1082);
+            equal.Location = new Point(712, 1072);
             equal.Name = "equal";
             equal.Size = new Size(188, 174);
             equal.TabIndex = 17;
@@ -282,11 +283,23 @@
             Mark_Label.TabIndex = 20;
             Mark_Label.Text = "=";
             // 
+            // backSpace
+            // 
+            backSpace.Font = new Font("Yu Gothic UI", 15F);
+            backSpace.Location = new Point(491, 1072);
+            backSpace.Name = "backSpace";
+            backSpace.Size = new Size(188, 174);
+            backSpace.TabIndex = 21;
+            backSpace.Text = "←";
+            backSpace.UseVisualStyleBackColor = true;
+            backSpace.Click += backSpace_Click;
+            // 
             // Form_Calculator
             // 
             AutoScaleDimensions = new SizeF(20F, 48F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(969, 1309);
+            Controls.Add(backSpace);
             Controls.Add(Mark_Label);
             Controls.Add(Num_Label);
             Controls.Add(divided);
@@ -338,5 +351,6 @@
         private Button multiplied;
         private Label Num_Label;
         private Label Mark_Label;
+        private Button backSpace;
     }
 }
