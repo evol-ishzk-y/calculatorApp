@@ -57,16 +57,6 @@ namespace calculatorApp
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Num_Label_Click(object sender, EventArgs e)
-        {
-
-        }
-
         //0～9をクリックしてNum_Labelに入れる
         private void numButton_Click(object sender, EventArgs e)
         {
@@ -121,8 +111,6 @@ namespace calculatorApp
             }
             Label_overwrite = true;
         }
-
-
 
         private void dot_Click(object sender, EventArgs e)
         {
@@ -205,5 +193,16 @@ namespace calculatorApp
                 Label_overwrite = true;
             }
         }
+        //特に使用なし
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Num_Label_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
