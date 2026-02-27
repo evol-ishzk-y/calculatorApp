@@ -66,6 +66,7 @@
             passTextBox.Name = "passTextBox";
             passTextBox.Size = new Size(566, 55);
             passTextBox.TabIndex = 3;
+            passTextBox.UseSystemPasswordChar = true;
             // 
             // loginButton
             // 

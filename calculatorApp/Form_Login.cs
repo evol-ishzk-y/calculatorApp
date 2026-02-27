@@ -20,7 +20,20 @@ namespace calculatorApp
 
         private void button1_Click(object sender, EventArgs e)
         {
+            DatabaseHelper db = new DatabaseHelper();
 
+            if(db.CheckLogin(userTextBox.Text, passTextBox.Text))
+            {
+                MessageBox.Show("ログイン成功！");
+
+                Form_Calculator calc = new Form_Calculator();
+                calc.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("ログインに失敗しました");
+            }
         }
     }
 }
