@@ -5,6 +5,7 @@ namespace calculatorApp
 {
     public partial class Form_Calculator : Form
     {
+        private string loginName;
         private bool Label_overwrite = true;
         private bool Dot_Label = false;
         private double dNum_Pool = 0;
@@ -52,9 +53,11 @@ namespace calculatorApp
             Num_Label.Text = dNum_Pool.ToString();
         }
 
-        public Form_Calculator()
+        public Form_Calculator(string name)
         {
             InitializeComponent();
+            loginName = name;
+            this.Text = "ÇÊÇ§Ç±Çª" + loginName + "Ç≥ÇÒ";
         }
 
         //0Å`9ÇÉNÉäÉbÉNÇµÇƒNum_LabelÇ…ì¸ÇÍÇÈ
