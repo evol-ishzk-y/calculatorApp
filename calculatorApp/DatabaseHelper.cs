@@ -38,5 +38,22 @@ namespace calculatorApp
                 return false;
             }
         }
+        public void SaveHistory(string user, string formula, string result)
+        {
+            using (var conn = new NpgsqlConnection(connString))
+            {
+                conn.Open();
+                string sql = "INSERT INTO calculation_history (username, formula, result) VALUES (@u, @f, @r)";
+
+                using (var cmd = new NpgsqlCommand(sql, conn))
+                {
+                    cmd.Parameters.AddWithValue("u", user);
+                    cmd.Parameters.AddWithValue("f", formula);
+                    cmd.Parameters.AddWithValue("r", result);
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
     }
 }

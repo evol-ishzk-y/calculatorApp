@@ -149,10 +149,23 @@ namespace calculatorApp
 
         private void equal_Click(object sender, EventArgs e)
         {
+            string formula = dNum_Pool.ToString() + " " + Mark_Label.Text + " " + Num_Label.Text;
             Calculate();
             mType = MarksType.NON;
             Label_overwrite = true;
             Mark_Label.Text = "=";
+
+            string result = Num_Label.Text;
+
+            try
+            {
+                DatabaseHelper db = new DatabaseHelper();
+                db.SaveHistory(this.loginName, formula, result);
+            }
+            catch (Exception ex) 
+            {
+                MessageBox.Show("—š—ð‚Ì•Û‘¶‚ÉŽ¸”s‚µ‚Ü‚µ‚½" + ex.Message);
+            }
         }
 
         private void sign_Click(object sender, EventArgs e)
