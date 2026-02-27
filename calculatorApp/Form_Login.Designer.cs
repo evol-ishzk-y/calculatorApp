@@ -90,6 +90,7 @@
             Controls.Add(label1);
             Name = "Form_Login";
             Text = "Form_Login";
+            Load += Form_Login_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -22,11 +22,11 @@ namespace calculatorApp
         {
             DatabaseHelper db = new DatabaseHelper();
 
-            if(db.CheckLogin(userTextBox.Text, passTextBox.Text))
+            if (db.CheckLogin(userTextBox.Text, passTextBox.Text))
             {
                 MessageBox.Show("ログイン成功！");
 
-                Form_Calculator calc = new Form_Calculator();
+                Form_Calculator calc = new Form_Calculator(userTextBox.Text);
                 calc.Show();
                 this.Hide();
             }
@@ -34,6 +34,11 @@ namespace calculatorApp
             {
                 MessageBox.Show("ログインに失敗しました");
             }
+        }
+
+        private void Form_Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
